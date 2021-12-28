@@ -3,6 +3,8 @@ import '../styles/reset.scss';
 import '../styles/main.scss';
 import Layout from '../components/Layout';
 
+import { StaticImage } from "gatsby-plugin-image"
+
 const IndexPage = () => {
 	return (
 		<Layout>
@@ -15,8 +17,12 @@ const IndexPage = () => {
 				</ul>
 			</section>
 			<section>
-				<h2>Test Image</h2>
+				<h2>Non-Gatsby Images</h2>
 				<img src="images/test.png" alt="the test" />
+			</section>
+			<section>
+				<h2>Gatsby Images</h2>
+				<StaticImage src="../images/test001.png" alt="test" />
 			</section>
 		</Layout>
 	)
